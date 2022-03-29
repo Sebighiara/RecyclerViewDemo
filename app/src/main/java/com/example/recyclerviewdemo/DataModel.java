@@ -5,6 +5,7 @@ public class DataModel {
     private String titleOne;
     private String titleTwo;
     private String photoUrl;
+    private String deleteButton;
 
     public String getTitleOne() {
         return titleOne;
@@ -30,4 +31,11 @@ public class DataModel {
         this.photoUrl = photoUrl;
     }
 
+    public String getDeleteButton() {
+        return deleteButton;
+    }
+
+    public void setDeleteButton(String deleteButton) {
+        this.deleteButton = deleteButton;
+    }
 }

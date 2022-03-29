@@ -21,17 +21,26 @@ public class MainActivity extends AppCompatActivity {
         DataModel modelOne = new DataModel();
         modelOne.setTitleOne("Title one");
         modelOne.setTitleTwo("Title two");
+        modelOne.setDeleteButton("Delete");
         adapter.addData(modelOne);
 
         DataModel modelTwo = new DataModel();
-        modelTwo.setTitleOne("component two");
-        modelTwo.setTitleTwo("component two");
+        modelTwo.setTitleOne("Title one");
+        modelTwo.setTitleTwo("Title two");
+        modelTwo.setDeleteButton("Delete");
         adapter.addData(modelTwo);
 
-
         DataModel modelThree = new DataModel();
-        modelThree.setTitleOne("component three");
-        modelThree.setTitleTwo("component three");
+        modelThree.setTitleOne("Title one");
+        modelThree.setTitleTwo("Title two");
+        modelThree.setDeleteButton("Delete");
         adapter.addData(modelThree);
+
+        DataModel modelFour = new DataModel();
+        modelFour.setTitleOne("Title one");
+        modelFour.setTitleTwo("Title two");
+        modelFour.setDeleteButton("Delete");
+        adapter.addData(modelFour);
+
     }
 }

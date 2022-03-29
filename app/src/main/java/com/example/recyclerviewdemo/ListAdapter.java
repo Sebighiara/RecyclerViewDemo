@@ -3,6 +3,7 @@ package com.example.recyclerviewdemo;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -57,6 +58,7 @@ class ListViewHolder extends RecyclerView.ViewHolder {
     TextView titleOne;
     TextView titleTwo;
     ImageView imageView;
+    Button deleteButton;
 
 
     public ListViewHolder(@NonNull View itemView) {
@@ -64,11 +66,14 @@ class ListViewHolder extends RecyclerView.ViewHolder {
         titleOne = itemView.findViewById(R.id.recycler_title_one);
         titleTwo = itemView.findViewById(R.id.recycler_title_two);
         imageView = itemView.findViewById(R.id.recycler_image);
+        deleteButton = itemView.findViewById(R.id.deleteButton);
+
     }
 
     public void bind(DataModel dataModel, int position) {
         titleOne.setText(dataModel.getTitleOne());
         titleTwo.setText(dataModel.getTitleTwo());
+        deleteButton.setText(dataModel.getDeleteButton());
 
         Glide.with(imageView)
                 .load("https://ii1.pepperfry.com/media/catalog/product/p/r/800x880/print-mantras-snooping-mickey-mouse-wall-sticker-print-mantras-snooping-mickey-mouse-wall-sticker-eqyg8m.jpg")

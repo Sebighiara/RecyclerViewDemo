@@ -13,4 +13,20 @@
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         android:background="#847D7D" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="+"
+        android:textSize="30dp"
+        android:background="@drawable/custom_button"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
